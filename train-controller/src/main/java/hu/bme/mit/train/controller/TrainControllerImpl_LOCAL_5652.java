@@ -10,7 +10,6 @@ public class TrainControllerImpl implements TrainController {
 	private int change = 0;
 	//Not conflict yet.
 
-
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
