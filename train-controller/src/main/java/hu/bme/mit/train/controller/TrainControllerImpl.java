@@ -7,6 +7,8 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
+	private double chan = 0;
+	//This will be the conflict.
 
 	@Override
 	public void followSpeed() {
