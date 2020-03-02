@@ -21,6 +21,7 @@ public class TrainControllerImpl implements TrainController {
 		}
 
 		enforceSpeedLimit();
+		thisIsTheChange();
 	}
 
 	@Override
@@ -45,5 +46,8 @@ public class TrainControllerImpl implements TrainController {
 	public void setJoystickPosition(int joystickPosition) {
 		this.step = joystickPosition;		
 	}
+
+	//bugfix
+	public void thisIsTheChange() {};
 
 }
