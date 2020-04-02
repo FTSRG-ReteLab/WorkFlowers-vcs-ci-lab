@@ -47,14 +47,12 @@ The figure below illustrates this behavior using an example.
 1. However, it reaches the speed limit so in the next step it is not incremented even though the joystick still has a positive value.
 1. Later, the joystick is set to a negative position for one time unit, making the reference speed to decrease as well.
 
-## Add some notes 
+## Tests 
 
-### We added some notes
+### Train Sensor
 
-This is it.
-
-### More notes
-
-There is more.
-
+* SpeedMarginOk() sets the speed to 120 and checks there is no invitation to turn on the alarm 
+* LotSpeed() sets the speed to 550 and checks there is 1 invitation to turn on the alarm 
+* LittleSpeed() sets the speed to -10 and checks there is 1 invitation to turn on the alarm 
+* Lessthen50D() sets the speed to 120 then sets the speed to 50 and checks there is 1 invitation to turn on the alarm 
 
