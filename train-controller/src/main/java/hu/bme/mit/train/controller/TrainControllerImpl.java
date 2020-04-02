@@ -10,6 +10,20 @@ public class TrainControllerImpl implements TrainController {
 	private int change = 0;
 	//Not conflict yet.
 
+	private Thread thread;
+
+	public TrainControllerImpl(){
+		thread = new Thread() {
+			public void run(){
+				thread.run();
+				try {
+					followSpeed();
+					thread.sleep(1000);
+				} catch (InterruptedException e) {}
+			}
+		};
+	}
+
 
 	@Override
 	public void followSpeed() {
